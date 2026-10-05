@@ -1,0 +1,59 @@
+{
+  "started_at_utc": "2026-10-04T22:16:43.279322+00:00",
+  "status": "passed",
+  "steps_requested": [
+    7,
+    8
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "packages": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "scipy": "1.17.0",
+      "scikit-learn": "1.8.0",
+      "xgboost": null,
+      "xgboost-cpu": null,
+      "matplotlib": "3.10.8",
+      "joblib": "1.5.3",
+      "threadpoolctl": "3.6.0",
+      "kagglehub": null
+    }
+  },
+  "stages": [
+    {
+      "number": 7,
+      "script": "exp07_statistics.py",
+      "source_sha256": "89f9c13e3456a9ace96d5b6415b8b6b8052631aa29acc54588ba2ae4e97d59c2",
+      "returncode": 0,
+      "seconds": 8.186471343999983
+    },
+    {
+      "number": 8,
+      "script": "exp08_paper_assets.py",
+      "source_sha256": "e0b09c67a4a868b9f8ee382406a9eddfec8d19a7a32a91f97d6e08eae0e68901",
+      "returncode": 0,
+      "seconds": 2.9311947520000103
+    }
+  ],
+  "finished_at_utc": "2026-10-04T22:16:54.413447+00:00",
+  "elapsed_seconds": 12.283453817000009,
+  "source_hashes": {
+    "src/__init__.py": "5e1547473fb7084e9c6d70f8500ba87c0672e003d0225ab16ee47d7d851179c4",
+    "src/data_audit.py": "56262690062525b6556a2d78daece431813f8e8f434842181efd42a3e528e0e2",
+    "src/evaluation.py": "88341fb0be94b2c7a93160a2d6730931998a556f25d71200565d53824933d8e0",
+    "src/protocols.py": "1c141343172f46d63c51c6d8b4851bee34112e66ce7a65305a32302bec3734d1",
+    "src/reproduction.py": "0b71a9e5762ee3960c7779c9667c37b4b670ac4a5accecd26ff86dbd4c5ebac9",
+    "experiments/common.py": "e24d3a0c58a8c56096117cca9a3247025c71cf07a665c659b60cc246a837fb49",
+    "experiments/exp01_reproduction.py": "60e1050d526820a8f2df7856049c60edfa36d1b34a171c8410668595d1ba2560",
+    "experiments/exp02_protocols.py": "d89b93834bb6bfbe8d6b84c8ae95c11a5fe056acd522c6fc65b4cb30be34f192",
+    "experiments/exp03_nested_validation.py": "e91eb5216387aaf58340716b017e64d8d77ca643d1fe8e8544dafd1e0e851953",
+    "experiments/exp04_preprocessing.py": "dfab738d071a00bd34b07192043c29e655260688c60d39678e7c1bbc26e35b64",
+    "experiments/exp05_tuning.py": "c779f6fac167d6dc51502e3497952ab83632a924c212b80be5425eda8cb98e22",
+    "experiments/exp06_mechanism.py": "22bbef1e0b5c2a8c651c8442a78fbf575d49312b6285a9f60b4bb51fee24de65",
+    "experiments/exp07_statistics.py": "89f9c13e3456a9ace96d5b6415b8b6b8052631aa29acc54588ba2ae4e97d59c2",
+    "experiments/exp08_paper_assets.py": "e0b09c67a4a868b9f8ee382406a9eddfec8d19a7a32a91f97d6e08eae0e68901",
+    "config/reproduction_v1.json": "5ae166461ed1eb9f76ac7fd17705c2da4dc80972d0f2f6fcfd54ba112c0890c3"
+  }
+}

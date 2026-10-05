@@ -1,0 +1,26 @@
+[exp01 reproduction] started
+Training records: 820; test records: 205
+Test class counts: {0: 102, 1: 103}
+Test rows with exact predictor matches in training: 199
+Interpret this as a row-level reproduction: exact record overlap exists across the split.
+Fitting individual classifier: LR
+Fitting individual classifier: DT
+Fitting individual classifier: RF
+Fitting individual classifier: XGB
+Fitting individual classifier: NB
+Fitting individual classifier: KNN
+Stacking fold 1/5
+Stacking fold 2/5
+Stacking fold 3/5
+Stacking fold 4/5
+Stacking fold 5/5
+   model  accuracy  precision   recall       f1  roc_auc
+      LR  0.795122   0.756303 0.873786 0.810811 0.878736
+      DT  0.985366   1.000000 0.970874 0.985222 0.985437
+      RF  0.985366   1.000000 0.970874 0.985222 1.000000
+     XGB  0.985366   1.000000 0.970874 0.985222 0.988864
+      NB  0.800000   0.754098 0.893204 0.817778 0.870550
+     KNN  0.834146   0.800000 0.893204 0.844037 0.948553
+Stacking  0.985366   1.000000 0.970874 0.985222 0.999143
+Results saved to: /workspace/scratch/36dda11e19b0/output/SIT307_11_1HD_Reviewed/results/01_reproduction
+[exp01 reproduction] finished in 1.7s

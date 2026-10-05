@@ -1,0 +1,39 @@
+[exp05 tuning] started
+  seed 0: LR thr=0.50
+  seed 1: XGB thr=0.46
+  seed 2: XGB thr=0.50
+  seed 3: XGB thr=0.34
+  seed 4: XGB thr=0.46
+  seed 5: RF thr=0.50
+  seed 6: LR thr=0.46
+  seed 7: LR thr=0.48
+  seed 8: SVM thr=0.50
+  seed 9: LR thr=0.50
+  seed 10: LR thr=0.50
+  seed 11: LR thr=0.46
+  seed 12: LR thr=0.52
+  seed 13: LR thr=0.50
+  seed 14: SVM thr=0.50
+  seed 15: XGB thr=0.50
+  seed 16: SVM thr=0.50
+  seed 17: LR thr=0.48
+  seed 18: LR thr=0.56
+  seed 19: LR thr=0.44
+  seed 20: LR thr=0.50
+  seed 21: LR thr=0.42
+  seed 22: SVM thr=0.50
+  seed 23: SVM thr=0.50
+  seed 24: RF thr=0.50
+  seed 25: LR thr=0.48
+  seed 26: LR thr=0.50
+  seed 27: LR thr=0.50
+  seed 28: LR thr=0.50
+  seed 29: LR thr=0.50
+  seed 42: LR thr=0.50
+[exp05 tuning] finished in 274.5s
+{'LR': 18, 'XGB': 5, 'SVM': 5, 'RF': 2}
+            arm weighting  accuracy_mean  precision_mean  recall_mean  f1_mean  roc_auc_mean  accuracy_sd  precision_sd  recall_sd  f1_sd  roc_auc_sd
+   Selected_0.5       row         0.8323          0.8238       0.8648   0.8400        0.9099       0.0505        0.0820     0.0621 0.0502      0.0304
+   Selected_0.5   pattern         0.8339          0.8413       0.8647   0.8493        0.9102       0.0509        0.0788     0.0622 0.0482      0.0309
+Selected_cutoff       row         0.8322          0.8193       0.8722   0.8410        0.9099       0.0486        0.0798     0.0620 0.0479      0.0304
+Selected_cutoff   pattern         0.8339          0.8369       0.8718   0.8503        0.9102       0.0487        0.0769     0.0621 0.0459      0.0309

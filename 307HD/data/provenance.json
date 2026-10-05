@@ -1,0 +1,13 @@
+{
+  "dataset_handle": "johnsmith88/heart-disease-dataset",
+  "source_url": "https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset",
+  "acquisition": "kagglehub.dataset_download",
+  "retrieved_at_utc": "2026-09-29T01:49:02.253918+00:00",
+  "requested_version": null,
+  "resolved_kaggle_version": 2,
+  "downloaded_filename": "heart.csv",
+  "sha256": "ddb2996b2f4db2e00aad13f4518200179ff69f79093838e3c21ffa672ebec0f1",
+  "size_bytes": 38114,
+  "paper_historical_version_verified": false,
+  "note": "The paper cites this resource but does not identify a version or hash."
+}

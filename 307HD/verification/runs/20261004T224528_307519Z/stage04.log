@@ -1,0 +1,37 @@
+[exp04 preprocessing ablations] started
+  seed 0 done
+  seed 1 done
+  seed 2 done
+  seed 3 done
+  seed 4 done
+  seed 5 done
+  seed 6 done
+  seed 7 done
+  seed 8 done
+  seed 9 done
+  seed 10 done
+  seed 11 done
+  seed 12 done
+  seed 13 done
+  seed 14 done
+  seed 15 done
+  seed 16 done
+  seed 17 done
+  seed 18 done
+  seed 19 done
+  seed 20 done
+  seed 21 done
+  seed 22 done
+  seed 23 done
+  seed 24 done
+  seed 25 done
+  seed 26 done
+  seed 27 done
+  seed 28 done
+  seed 29 done
+  seed 42 done
+[exp04 preprocessing ablations] finished in 81.0s
+     arm  accuracy_mean  recall_mean  f1_mean  roc_auc_mean
+ C_dedup         0.8153       0.8691   0.8273        0.9007
+C_onehot         0.8370       0.8634   0.8436        0.9038
+       D         0.8354       0.8761   0.8442        0.9050

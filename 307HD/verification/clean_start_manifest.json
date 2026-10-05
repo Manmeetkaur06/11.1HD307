@@ -1,0 +1,31 @@
+{
+  "method": "fresh source copy with no results, figures, generated tables or previous execution logs",
+  "source": "/workspace/scratch/36dda11e19b0/output/SIT307_11_1HD_Reviewed",
+  "target": "/workspace/scratch/36dda11e19b0/tmp/full_serial_oct05/project",
+  "files": {
+    "README.md": "f75cf2853d627c57b6eaf97bbe1e3e53bfadfda94d01039878de5a8649597ae7",
+    "config/reproduction_v1.json": "5ae166461ed1eb9f76ac7fd17705c2da4dc80972d0f2f6fcfd54ba112c0890c3",
+    "data/heart.csv": "ddb2996b2f4db2e00aad13f4518200179ff69f79093838e3c21ffa672ebec0f1",
+    "data/provenance.json": "5d1e8776b9937637c3d4d9dfd25fb7a124de855362b2673dfe3765788bc7ce05",
+    "experiments/common.py": "e24d3a0c58a8c56096117cca9a3247025c71cf07a665c659b60cc246a837fb49",
+    "experiments/exp01_reproduction.py": "60e1050d526820a8f2df7856049c60edfa36d1b34a171c8410668595d1ba2560",
+    "experiments/exp02_protocols.py": "d89b93834bb6bfbe8d6b84c8ae95c11a5fe056acd522c6fc65b4cb30be34f192",
+    "experiments/exp03_nested_validation.py": "e91eb5216387aaf58340716b017e64d8d77ca643d1fe8e8544dafd1e0e851953",
+    "experiments/exp04_preprocessing.py": "dfab738d071a00bd34b07192043c29e655260688c60d39678e7c1bbc26e35b64",
+    "experiments/exp05_tuning.py": "c779f6fac167d6dc51502e3497952ab83632a924c212b80be5425eda8cb98e22",
+    "experiments/exp06_mechanism.py": "22bbef1e0b5c2a8c651c8442a78fbf575d49312b6285a9f60b4bb51fee24de65",
+    "experiments/exp07_statistics.py": "89f9c13e3456a9ace96d5b6415b8b6b8052631aa29acc54588ba2ae4e97d59c2",
+    "experiments/exp08_paper_assets.py": "303e7ff0c245857636a70caa6544b754f192dadc65ca24416fc63a27b57d5ed4",
+    "notebooks/SIT307_HD_Colab.ipynb": "e7b9d5f2baf9ab09d0bac9527a0b06cbbafa83454a169633f59c84a72a0adaee",
+    "notebooks/SIT307_HD_Verification.ipynb": "fd1dfa25e5aa1fd1c065de5b4aa2edbdbfd323ecb523c40a34a34ebba6309d74",
+    "requirements.txt": "b2ad844a5c437af570acde8e0c15eb622925429b1141ef5f9467bf67857c1d49",
+    "run_all.py": "bfbe756a49f6107c979581eafaa693b0d4c75732021e02a391869411b9554c91",
+    "run_experiment.py": "bea9a844624eea7f0753badcee54199499f85205dedbb98199a26a88666f9499",
+    "src/__init__.py": "5e1547473fb7084e9c6d70f8500ba87c0672e003d0225ab16ee47d7d851179c4",
+    "src/data_audit.py": "56262690062525b6556a2d78daece431813f8e8f434842181efd42a3e528e0e2",
+    "src/evaluation.py": "88341fb0be94b2c7a93160a2d6730931998a556f25d71200565d53824933d8e0",
+    "src/protocols.py": "1c141343172f46d63c51c6d8b4851bee34112e66ce7a65305a32302bec3734d1",
+    "src/reproduction.py": "0b71a9e5762ee3960c7779c9667c37b4b670ac4a5accecd26ff86dbd4c5ebac9",
+    "verify_results.py": "f68eee89af5ed570c878126365b6cfedec903126451f4c43d046c52c17072831"
+  }
+}

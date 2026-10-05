@@ -1,0 +1,24 @@
+[exp01 reproduction] started
+Training records: 820; test records: 205
+Test class counts: {0: 102, 1: 103}
+Test rows with exact predictor matches in training: 199
+Interpret this as a row-level reproduction: exact record overlap exists across the split.
+[exp01 reproduction] finished in 0.3s
+Traceback (most recent call last):
+  File "/workspace/scratch/36dda11e19b0/output/SIT307_11_1HD_Reviewed/src/reproduction.py", line 64, in build_models
+    from xgboost import XGBClassifier
+ModuleNotFoundError: No module named 'xgboost'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/scratch/36dda11e19b0/output/SIT307_11_1HD_Reviewed/experiments/exp01_reproduction.py", line 20, in <module>
+    main()
+  File "/workspace/scratch/36dda11e19b0/output/SIT307_11_1HD_Reviewed/experiments/exp01_reproduction.py", line 16, in main
+    run_reproduction(ROOT, output_dir=out)
+  File "/workspace/scratch/36dda11e19b0/output/SIT307_11_1HD_Reviewed/src/reproduction.py", line 250, in run_reproduction
+    models = build_models(config)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/36dda11e19b0/output/SIT307_11_1HD_Reviewed/src/reproduction.py", line 66, in build_models
+    raise ImportError("XGBoost is required; install requirements.txt. No substitute model is used.") from exc
+ImportError: XGBoost is required; install requirements.txt. No substitute model is used.

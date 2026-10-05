@@ -1,0 +1,18 @@
+[exp03 nested validation] started
+  seed 0 done
+  seed 1 done
+  seed 2 done
+  seed 3 done
+  seed 4 done
+  seed 5 done
+  seed 6 done
+  seed 7 done
+  seed 8 done
+  seed 9 done
+[exp03 nested validation] finished in 74.6s
+   metric  row_cv_mean  group_cv_mean  holdout_mean  row_cv_mae  group_cv_mae  row_cv_bias  group_cv_bias  group_closer  n_seeds
+ accuracy       0.9647         0.8241        0.7960      0.1687        0.0498       0.1687         0.0282             9       10
+precision       0.9693         0.8114        0.7891      0.1802        0.0555       0.1802         0.0223             9       10
+   recall       0.9611         0.8576        0.8277      0.1378        0.0673       0.1334         0.0299             8       10
+       f1       0.9651         0.8337        0.8055      0.1596        0.0472       0.1596         0.0282            10       10
+  roc_auc       0.9933         0.8976        0.8885      0.1048        0.0257       0.1048         0.0091            10       10

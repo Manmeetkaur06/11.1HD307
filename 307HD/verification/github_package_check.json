@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-04T23:49:18.411610+00:00",
+  "results_archive_sha256": "559399e7ec083a9a92bb7b64a965b01147d82edfb3828f0a531fe3f8e668931a",
+  "restored_files": 278,
+  "prediction_files": 237,
+  "verification_notebook_code_cells_passed": 6,
+  "automatic_notebook_restoration_passed": true,
+  "saved_metric_verifier_passed": true,
+  "repeat_restoration_is_idempotent": true,
+  "different_existing_results_are_not_overwritten": true,
+  "experiment_sources_dataset_and_configuration_match_verified_submission": true,
+  "note": "Packaging checks used a separate fresh directory. Models were not retrained during packaging; the earlier complete eight-stage run is retained under verification/runs/."
+}

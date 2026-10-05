@@ -1,0 +1,60 @@
+[exp06 E1 overlap decomposition] started
+   model  acc_seen  acc_unseen  n_seen  n_unseen
+      LR    0.8426      0.9162    5971       179
+      DT    1.0000      0.9274    5971       179
+      RF    1.0000      0.9330    5971       179
+     XGB    1.0000      0.9162    5971       179
+      NB    0.8230      0.9330    5971       179
+     KNN    0.8488      0.9162    5971       179
+Stacking    1.0000      0.9162    5971       179
+[exp06 E1 overlap decomposition] finished in 0.0s
+[exp06 E2 combiner control] started
+combiner         arm
+lr_meta          B      0.7856
+                 C      0.8117
+oof_best_single  B      0.7768
+                 C      0.8031
+soft_vote        B      0.8024
+                 C      0.8024
+Name: accuracy, dtype: float64
+[exp06 E2 combiner control] finished in 0.9s
+[exp06 E3 inner-fold count] started
+  seed 0 done
+  seed 1 done
+  seed 2 done
+  seed 3 done
+  seed 4 done
+  seed 5 done
+  seed 6 done
+  seed 7 done
+  seed 8 done
+  seed 9 done
+  seed 10 done
+  seed 11 done
+  seed 12 done
+  seed 13 done
+  seed 14 done
+  seed 15 done
+  seed 16 done
+  seed 17 done
+  seed 18 done
+  seed 19 done
+  seed 20 done
+  seed 21 done
+  seed 22 done
+  seed 23 done
+  seed 24 done
+  seed 25 done
+  seed 26 done
+  seed 27 done
+  seed 28 done
+  seed 29 done
+k   arm
+3   B      0.7848
+    C      0.8099
+5   B      0.7856
+    C      0.8117
+10  B      0.7854
+    C      0.8115
+Name: accuracy, dtype: float64
+[exp06 E3 inner-fold count] finished in 103.8s

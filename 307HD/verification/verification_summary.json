@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "dataset_rows": 1025,
+  "dataset_predictors": 13,
+  "dataset_sha256": "ddb2996b2f4db2e00aad13f4518200179ff69f79093838e3c21ffa672ebec0f1",
+  "anchor_protocol": "C / seed 42 / Stacking",
+  "anchor_metrics": {
+    "accuracy": 0.8277511961722488,
+    "precision": 0.7766990291262136,
+    "recall": 0.8602150537634409,
+    "f1": 0.8163265306122449,
+    "roc_auc": 0.8616981831664813
+  },
+  "paired_C_minus_B_accuracy_pp": 2.610222721177459,
+  "paired_D_stack_minus_D_LR_accuracy_pp": -0.9719012482045611,
+  "D_stack_minus_D_LR_corrected_p": 0.5290116570732165,
+  "D_stack_minus_D_LR_Holm_p": 0.6896996430179659,
+  "full_training_execution": "verification/runs/20261004T224528_307519Z/execution.json",
+  "latest_execution_steps": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "saved_prediction_runs": {
+    "results/02_protocols/runs": 93,
+    "results/03_nested_validation/runs": 20,
+    "results/04_preprocessing/runs": 93,
+    "results/05_tuning/runs": 31
+  },
+  "verification_execution": "verification/runs/20261004T224528_307519Z/execution.json"
+}

@@ -1,0 +1,296 @@
+
+========================================================================
+Experiment 1: Part 1 reproduction of Bhagat et al. (seed 42)
+========================================================================
+[exp01 reproduction] started
+Training records: 820; test records: 205
+Test class counts: {0: 102, 1: 103}
+Test rows with exact predictor matches in training: 199
+Interpret this as a row-level reproduction: exact record overlap exists across the split.
+Fitting individual classifier: LR
+Fitting individual classifier: DT
+Fitting individual classifier: RF
+Fitting individual classifier: XGB
+Fitting individual classifier: NB
+Fitting individual classifier: KNN
+Stacking fold 1/5
+Stacking fold 2/5
+Stacking fold 3/5
+Stacking fold 4/5
+Stacking fold 5/5
+   model  accuracy  precision   recall       f1  roc_auc
+      LR  0.795122   0.756303 0.873786 0.810811 0.878736
+      DT  0.985366   1.000000 0.970874 0.985222 0.985437
+      RF  0.985366   1.000000 0.970874 0.985222 1.000000
+     XGB  0.985366   1.000000 0.970874 0.985222 0.988864
+      NB  0.800000   0.754098 0.893204 0.817778 0.870550
+     KNN  0.834146   0.800000 0.893204 0.844037 0.948553
+Stacking  0.985366   1.000000 0.970874 0.985222 0.999143
+Results saved to: /workspace/scratch/36dda11e19b0/tmp/full_serial_oct05/project/results/01_reproduction
+[exp01 reproduction] finished in 1.8s
+
+========================================================================
+Experiment 2: Protocols A, B, C over 30 seeds
+========================================================================
+[exp02 protocols A/B/C] started
+  seed 0 done
+  seed 1 done
+  seed 2 done
+  seed 3 done
+  seed 4 done
+  seed 5 done
+  seed 6 done
+  seed 7 done
+  seed 8 done
+  seed 9 done
+  seed 10 done
+  seed 11 done
+  seed 12 done
+  seed 13 done
+  seed 14 done
+  seed 15 done
+  seed 16 done
+  seed 17 done
+  seed 18 done
+  seed 19 done
+  seed 20 done
+  seed 21 done
+  seed 22 done
+  seed 23 done
+  seed 24 done
+  seed 25 done
+  seed 26 done
+  seed 27 done
+  seed 28 done
+  seed 29 done
+  seed 42 done
+[exp02 protocols A/B/C] finished in 74.8s
+              accuracy_mean  accuracy_sd  roc_auc_mean
+arm model                                             
+A   Stacking         0.9976       0.0067        1.0000
+B   Stacking         0.7856       0.0469        0.8831
+C   Stacking         0.8117       0.0449        0.8979
+
+========================================================================
+Experiment 3: Nested validation reliability (10 seeds)
+========================================================================
+[exp03 nested validation] started
+  seed 0 done
+  seed 1 done
+  seed 2 done
+  seed 3 done
+  seed 4 done
+  seed 5 done
+  seed 6 done
+  seed 7 done
+  seed 8 done
+  seed 9 done
+[exp03 nested validation] finished in 74.6s
+   metric  row_cv_mean  group_cv_mean  holdout_mean  row_cv_mae  group_cv_mae  row_cv_bias  group_cv_bias  group_closer  n_seeds
+ accuracy       0.9647         0.8241        0.7960      0.1687        0.0498       0.1687         0.0282             9       10
+precision       0.9693         0.8114        0.7891      0.1802        0.0555       0.1802         0.0223             9       10
+   recall       0.9611         0.8576        0.8277      0.1378        0.0673       0.1334         0.0299             8       10
+       f1       0.9651         0.8337        0.8055      0.1596        0.0472       0.1596         0.0282            10       10
+  roc_auc       0.9933         0.8976        0.8885      0.1048        0.0257       0.1048         0.0091            10       10
+
+========================================================================
+Experiment 4: Encoding / deduplication ablations (C_dedup, C_onehot, D)
+========================================================================
+[exp04 preprocessing ablations] started
+  seed 0 done
+  seed 1 done
+  seed 2 done
+  seed 3 done
+  seed 4 done
+  seed 5 done
+  seed 6 done
+  seed 7 done
+  seed 8 done
+  seed 9 done
+  seed 10 done
+  seed 11 done
+  seed 12 done
+  seed 13 done
+  seed 14 done
+  seed 15 done
+  seed 16 done
+  seed 17 done
+  seed 18 done
+  seed 19 done
+  seed 20 done
+  seed 21 done
+  seed 22 done
+  seed 23 done
+  seed 24 done
+  seed 25 done
+  seed 26 done
+  seed 27 done
+  seed 28 done
+  seed 29 done
+  seed 42 done
+[exp04 preprocessing ablations] finished in 81.0s
+     arm  accuracy_mean  recall_mean  f1_mean  roc_auc_mean
+ C_dedup         0.8153       0.8691   0.8273        0.9007
+C_onehot         0.8370       0.8634   0.8436        0.9038
+       D         0.8354       0.8761   0.8442        0.9050
+
+========================================================================
+Experiment 5: Development-only tuning study
+========================================================================
+[exp05 tuning] started
+  seed 0: LR thr=0.50
+  seed 1: XGB thr=0.46
+  seed 2: XGB thr=0.50
+  seed 3: XGB thr=0.34
+  seed 4: XGB thr=0.46
+  seed 5: RF thr=0.50
+  seed 6: LR thr=0.46
+  seed 7: LR thr=0.48
+  seed 8: SVM thr=0.50
+  seed 9: LR thr=0.50
+  seed 10: LR thr=0.50
+  seed 11: LR thr=0.46
+  seed 12: LR thr=0.52
+  seed 13: LR thr=0.50
+  seed 14: SVM thr=0.50
+  seed 15: XGB thr=0.50
+  seed 16: SVM thr=0.50
+  seed 17: LR thr=0.48
+  seed 18: LR thr=0.56
+  seed 19: LR thr=0.44
+  seed 20: LR thr=0.50
+  seed 21: LR thr=0.42
+  seed 22: SVM thr=0.50
+  seed 23: SVM thr=0.50
+  seed 24: RF thr=0.50
+  seed 25: LR thr=0.48
+  seed 26: LR thr=0.50
+  seed 27: LR thr=0.50
+  seed 28: LR thr=0.50
+  seed 29: LR thr=0.50
+  seed 42: LR thr=0.50
+[exp05 tuning] finished in 274.5s
+{'LR': 18, 'XGB': 5, 'SVM': 5, 'RF': 2}
+            arm weighting  accuracy_mean  precision_mean  recall_mean  f1_mean  roc_auc_mean  accuracy_sd  precision_sd  recall_sd  f1_sd  roc_auc_sd
+   Selected_0.5       row         0.8323          0.8238       0.8648   0.8400        0.9099       0.0505        0.0820     0.0621 0.0502      0.0304
+   Selected_0.5   pattern         0.8339          0.8413       0.8647   0.8493        0.9102       0.0509        0.0788     0.0622 0.0482      0.0309
+Selected_cutoff       row         0.8322          0.8193       0.8722   0.8410        0.9099       0.0486        0.0798     0.0620 0.0479      0.0304
+Selected_cutoff   pattern         0.8339          0.8369       0.8718   0.8503        0.9102       0.0487        0.0769     0.0621 0.0459      0.0309
+
+========================================================================
+Experiment 6: Mechanism experiments E1-E3
+========================================================================
+[exp06 E1 overlap decomposition] started
+   model  acc_seen  acc_unseen  n_seen  n_unseen
+      LR    0.8426      0.9162    5971       179
+      DT    1.0000      0.9274    5971       179
+      RF    1.0000      0.9330    5971       179
+     XGB    1.0000      0.9162    5971       179
+      NB    0.8230      0.9330    5971       179
+     KNN    0.8488      0.9162    5971       179
+Stacking    1.0000      0.9162    5971       179
+[exp06 E1 overlap decomposition] finished in 0.0s
+[exp06 E2 combiner control] started
+combiner         arm
+lr_meta          B      0.7856
+                 C      0.8117
+oof_best_single  B      0.7768
+                 C      0.8031
+soft_vote        B      0.8024
+                 C      0.8024
+Name: accuracy, dtype: float64
+[exp06 E2 combiner control] finished in 0.9s
+[exp06 E3 inner-fold count] started
+  seed 0 done
+  seed 1 done
+  seed 2 done
+  seed 3 done
+  seed 4 done
+  seed 5 done
+  seed 6 done
+  seed 7 done
+  seed 8 done
+  seed 9 done
+  seed 10 done
+  seed 11 done
+  seed 12 done
+  seed 13 done
+  seed 14 done
+  seed 15 done
+  seed 16 done
+  seed 17 done
+  seed 18 done
+  seed 19 done
+  seed 20 done
+  seed 21 done
+  seed 22 done
+  seed 23 done
+  seed 24 done
+  seed 25 done
+  seed 26 done
+  seed 27 done
+  seed 28 done
+  seed 29 done
+k   arm
+3   B      0.7848
+    C      0.8099
+5   B      0.7856
+    C      0.8117
+10  B      0.7854
+    C      0.8115
+Name: accuracy, dtype: float64
+[exp06 E3 inner-fold count] finished in 103.8s
+
+========================================================================
+Experiment 7: Paired statistics, bootstrap and McNemar
+========================================================================
+[exp07 statistics] started
+[exp07 statistics] finished in 7.0s
+               contrast weighting  mean_pp  sd_pp  wins  ties  losses  p_corr  holm_p
+              C-B stack       row   2.6102 4.7975    21     1       8  0.3178     NaN
+              C-B stack   pattern   2.7869 4.6197    22     1       7  0.2689     NaN
+              D-C stack       row   2.3681 2.8811    21     3       6  0.1354  0.4063
+              D-C stack   pattern   2.2404 2.7728    19     6       5  0.1419  0.4258
+              D-B stack       row   4.9783 4.0170    25     0       5  0.0279  0.1114
+              D-B stack   pattern   5.0273 3.9206    24     4       2  0.0233  0.0930
+           D stack-C LR       row   1.8050 3.5121    19     1      10  0.3448  0.6897
+           D stack-C LR   pattern   1.5847 3.4030    16     5       9  0.3914  0.7828
+        C_dedup-C stack       row   0.3581 3.1139    14     4      12  0.8314     NaN
+        C_dedup-C stack   pattern   0.3825 3.0345    14     6      10  0.8155     NaN
+       C_onehot-C stack       row   2.5293 2.8964    23     2       5  0.1136     NaN
+       C_onehot-C stack   pattern   2.2951 2.6399    20     5       5  0.1151     NaN
+       D-C_onehot stack       row  -0.1611 2.4594    11     5      14  0.9034     NaN
+       D-C_onehot stack   pattern  -0.0546 2.4912    11     8      11  0.9676     NaN
+        D-C_dedup stack       row   2.0100 2.7517    22     4       4  0.1828     NaN
+        D-C_dedup stack   pattern   1.8579 2.6445    19     7       4  0.1996     NaN
+           C stack-C LR       row  -0.5631 2.7991    10     5      15  0.7098     NaN
+           C stack-C LR   pattern  -0.6557 2.8099     7    10      13  0.6660     NaN
+           C stack-C NB       row   1.3675 4.2879    15     6       9  0.5559     NaN
+           C stack-C NB   pattern   1.2568 4.3198    15     7       8  0.5909     NaN
+           D stack-D LR       row  -0.9719 2.8500     8     5      17  0.5290  0.6897
+           D stack-D LR   pattern  -0.9836 2.9702     8     5      17  0.5409  0.7828
+    Selected0.5-D stack       row  -0.3036 2.5899    14     2      14  0.8282     NaN
+    Selected0.5-D stack   pattern  -0.4918 2.6937    10     7      13  0.7355     NaN
+    SelectedCut-D stack       row  -0.3213 2.3660    13     2      15  0.8015     NaN
+    SelectedCut-D stack   pattern  -0.4918 2.4410     9     7      14  0.7093     NaN
+       Selected0.5-D LR       row  -1.2755 3.0721     8     8      14  0.4442     NaN
+       Selected0.5-D LR   pattern  -1.4754 3.1738     6    10      14  0.3922     NaN
+       SelectedCut-D LR       row  -1.2932 3.0130     9     4      17  0.4291     NaN
+       SelectedCut-D LR   pattern  -1.4754 3.0850     7     6      17  0.3789     NaN
+SelectedCut-Selected0.5       row  -0.0177 0.7978     4    22       4  0.9672     NaN
+SelectedCut-Selected0.5   pattern  -0.0000 0.8610     4    22       4  1.0000     NaN
+  metric  observed  ci_low  ci_high  n_patterns
+accuracy    0.0000 -0.0820   0.0820          61
+      f1    0.0057 -0.0792   0.0900          61
+ roc_auc    0.0172 -0.0312   0.0682          61
+{'stack_only_correct': 3, 'nb_only_correct': 3, 'mcnemar_exact_p': 1.0, 'stack_correct': 51, 'nb_correct': 51, 'n_patterns': 61}
+
+========================================================================
+Experiment 8: Figures, LaTeX tables and numbers for the paper
+========================================================================
+[exp08 paper assets] started
+[exp08 paper assets] finished in 1.5s
+Wrote /workspace/scratch/36dda11e19b0/tmp/full_serial_oct05/project/paper/generated and /workspace/scratch/36dda11e19b0/tmp/full_serial_oct05/project/paper/figs
+
+All requested experiments finished in 10.5 min.
+Results: results/   Paper assets: paper/generated/, paper/figs/
